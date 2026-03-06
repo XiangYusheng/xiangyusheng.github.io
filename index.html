@@ -1,39 +1,312 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="zh-CN">
 <head>
-<title>Xiang Yusheng</title>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>项羽升 | 南通大学智能无人装备实验室</title>
+  <style>
+    :root {
+      --primary: #1f4e79;
+      --text: #222;
+      --muted: #666;
+      --border: #d9d9d9;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --link: #1f4e79;
+    }
 
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Georgia", "Times New Roman", "Noto Serif SC", "Songti SC", "SimSun", serif;
+      line-height: 1.9;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 28px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 18px;
+      font-size: 16px;
+    }
+
+    .lang-switch {
+      font-weight: 600;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 32px auto;
+      background: var(--card);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      padding: 36px 42px 40px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-bottom: 18px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--border);
+      font-size: 16px;
+    }
+
+    .nav a {
+      font-weight: 600;
+    }
+
+    .header {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .photo {
+      flex: 0 0 210px;
+    }
+
+    .photo img {
+      width: 210px;
+      height: 280px;
+      object-fit: cover;
+      border: 1px solid #cfcfcf;
+      background: #fafafa;
+      display: block;
+    }
+
+    .profile {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .name-cn {
+      margin: 0 0 8px 0;
+      font-size: 36px;
+      color: var(--primary);
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    .name-en {
+      margin: 0 0 16px 0;
+      font-size: 24px;
+      color: #444;
+      font-weight: 500;
+    }
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      margin: 6px 0;
+      font-size: 17px;
+    }
+
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 18px;
+      font-size: 24px;
+      color: var(--primary);
+      border-left: 5px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 12px 0;
+      text-align: justify;
+    }
+
+    ul {
+      margin: 10px 0 0 0;
+      padding-left: 24px;
+      font-size: 18px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: #777;
+      font-size: 15px;
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        margin: 12px;
+        padding: 24px 18px 28px;
+      }
+
+      .topbar-inner {
+        padding: 12px 16px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile {
+        width: 100%;
+      }
+
+      .name-cn,
+      .name-en,
+      .title,
+      .subtitle,
+      .contact p {
+        text-align: center;
+      }
+
+      .nav {
+        gap: 12px;
+      }
+
+      p, ul {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
 <body>
 
-<h1>项羽升 Xiang Yusheng</h1>
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html" class="lang-switch">中文</a>
+      <a href="en.html">English</a>
+    </div>
+  </div>
 
+  <div class="page">
+    <div class="nav">
+      <a href="#biography">简介</a>
+      <a href="#research">研究方向</a>
+      <a href="#students">招生信息</a>
+      <a href="#documents">实验室文件</a>
+      <a href="#contact">联系方式</a>
+    </div>
 
- 国家级海外高层次引进人才，教授，博士研究生导师。博士毕业于德国卡尔斯鲁厄理工学院(KIT)，联合培养为加州大学伯克利分校，师从Prof. Samuel S. Mao。
+    <div class="header">
+      <div class="photo">
+        <img src="photo.jpg" alt="项羽升">
+      </div>
 
-   主要研究方向包括：人工智能，智能工程机械与特种车辆。
+      <div class="profile">
+        <h1 class="name-cn">项羽升</h1>
+        <div class="name-en">Xiang Yusheng</div>
+        <div class="title">教授，博士研究生导师</div>
+        <div class="subtitle">南通大学智能无人装备实验室</div>
 
-   课题组包括国家级人才2名（李俊教授，保送北大的天才），省级人才1名。每年招收博士生2名（信息与通信工程），硕士生6名（人工智能，交通运输）。本科生，硕博士考生，和保送生均可与我联系，专业背景不限。
+        <div class="contact" id="contact">
+          <p><strong>电话：</strong>13016008887</p>
+          <p><strong>邮箱：</strong>yusheng.xiang@ntu.edu.cn</p>
+        </div>
+      </div>
+    </div>
 
-   欢迎肯钻研、（或）动手能力强、（或）有组织学生工作能力（班干部或学生会）、（或）有创业想法的同学加盟团队。申请时请上传您的：简历，成绩单（本科成绩，研究生成绩，考研成绩），以及一段大致400字的动机信（主要说自己喜欢研究什么，自己的人生目标）。
+    <h2 id="biography">简介</h2>
 
-   同时非常乐于指导各层次学生参加各类学术竞赛。
+    <p>
+      国家级海外高层次引进人才，教授，博士研究生导师。博士毕业于德国卡尔斯鲁厄理工学院（KIT），联合培养于加州大学伯克利分校，师从 Prof. Samuel S. Mao。
+    </p>
 
-电话：13016008887
+    <p>
+      主要研究方向包括：人工智能、智能工程机械与特种车辆。
+    </p>
 
-邮箱：yusheng.xiang@ntu.edu.cn
+    <p>
+      课题组包括国家级人才 2 名、省级人才 1 名。每年招收博士生 2 名（信息与通信工程），硕士生 6 名（人工智能、交通运输）。本科生、硕博士考生和保送生均可与我联系，专业背景不限。
+    </p>
 
-<p>Professor, Nantong University</p>
+    <p>
+      欢迎肯钻研、动手能力强、有组织学生工作能力（班干部或学生会）、或有创业想法的同学加入团队。申请时请上传您的简历、成绩单（本科成绩、研究生成绩、考研成绩），以及一段约 400 字的动机信，说明您感兴趣的研究方向与个人长期目标。
+    </p>
 
-<p>Welcome to my personal academic homepage.</p>
-<h2>Lab Documents</h2>
+    <p>
+      同时非常乐于指导各层次学生参加各类学术竞赛。
+    </p>
 
-<ul>
-<li><a href="南通大学智能无人装备实验室_本科生科研训练与竞赛团队手册.pdf">南通大学智能无人装备实验室：本科生科研训练与竞赛团队手册.pdf</a></li>
-<li><a href="南通大学智能无人装备实验室_研究生培养与管理手册_正式版_.pdf">南通大学智能无人装备实验室：研究生培养与管理手册.pdf</a></li>
-</ul>
+    <h2 id="research">研究方向</h2>
+    <ul>
+      <li>人工智能与智能无人装备</li>
+      <li>智能工程机械与特种车辆</li>
+      <li>自动驾驶与具身智能系统</li>
+      <li>多传感器感知、融合与系统集成</li>
+      <li>面向真实场景部署的智能工程系统</li>
+    </ul>
 
+    <h2 id="students">招生信息</h2>
+
+    <p>
+      课题组长期欢迎博士生、硕士生、本科生以及具有较强研究潜力的保送生加入。我们尤其欢迎以下类型的同学：
+    </p>
+
+    <ul>
+      <li>对科研有持续兴趣，愿意长期投入并主动思考问题；</li>
+      <li>具有较强动手能力，愿意参与系统开发、实验与工程实现；</li>
+      <li>具备组织协调能力，愿意承担团队事务与项目协作；</li>
+      <li>对交叉学科研究或科技创业有兴趣。</li>
+    </ul>
+
+    <p>
+      如有意申请，请通过邮件联系，并附上简历、成绩单及简要的个人陈述。
+    </p>
+
+    <h2 id="documents">实验室文件</h2>
+    <ul>
+      <li>
+        <a href="南通大学智能无人装备实验室：本科生科研训练与竞赛团队手册.pdf" target="_blank">
+          本科生科研训练与竞赛团队手册
+        </a>
+      </li>
+      <li>
+        <a href="南通大学智能无人装备实验室：研究生培养与管理手册_正式版.pdf" target="_blank">
+          研究生培养与管理手册
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer">
+      © Xiang Yusheng | Nantong University
+    </div>
+  </div>
 </body>
-
 </html>
