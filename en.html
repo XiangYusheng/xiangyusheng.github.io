@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Xiang Yusheng | Nantong University</title>
+  <style>
+    :root {
+      --primary: #1f4e79;
+      --text: #222;
+      --muted: #666;
+      --border: #d9d9d9;
+      --bg: #f5f7fa;
+      --card: #ffffff;
+      --link: #1f4e79;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.85;
+    }
+
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .topbar {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .topbar-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 14px 28px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 18px;
+      font-size: 16px;
+    }
+
+    .lang-switch {
+      font-weight: 600;
+    }
+
+    .page {
+      max-width: 1100px;
+      margin: 32px auto;
+      background: var(--card);
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      padding: 36px 42px 40px;
+    }
+
+    .nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      padding-bottom: 18px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--border);
+      font-size: 16px;
+    }
+
+    .nav a {
+      font-weight: 600;
+    }
+
+    .header {
+      display: flex;
+      gap: 36px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+
+    .photo {
+      flex: 0 0 210px;
+    }
+
+    .photo img {
+      width: 210px;
+      height: 280px;
+      object-fit: cover;
+      border: 1px solid #cfcfcf;
+      background: #fafafa;
+      display: block;
+    }
+
+    .profile {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .name {
+      margin: 0 0 10px 0;
+      font-size: 36px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    .title {
+      font-size: 20px;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      color: var(--muted);
+      margin-bottom: 18px;
+    }
+
+    .contact p {
+      margin: 6px 0;
+      font-size: 17px;
+    }
+
+    h2 {
+      margin-top: 36px;
+      margin-bottom: 18px;
+      font-size: 24px;
+      color: var(--primary);
+      border-left: 5px solid var(--primary);
+      padding-left: 12px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 12px 0;
+      text-align: justify;
+    }
+
+    ul {
+      margin: 10px 0 0 0;
+      padding-left: 24px;
+      font-size: 18px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    .footer {
+      margin-top: 42px;
+      padding-top: 18px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: #777;
+      font-size: 15px;
+    }
+
+    @media (max-width: 820px) {
+      .page {
+        margin: 12px;
+        padding: 24px 18px 28px;
+      }
+
+      .topbar-inner {
+        padding: 12px 16px;
+      }
+
+      .header {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .profile {
+        width: 100%;
+      }
+
+      .name,
+      .title,
+      .subtitle,
+      .contact p {
+        text-align: center;
+      }
+
+      .nav {
+        gap: 12px;
+      }
+
+      p, ul {
+        font-size: 17px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="topbar-inner">
+      <a href="index.html">中文</a>
+      <a href="en.html" class="lang-switch">English</a>
+    </div>
+  </div>
+
+  <div class="page">
+    <div class="nav">
+      <a href="#biography">Biography</a>
+      <a href="#research">Research</a>
+      <a href="#students">Students</a>
+      <a href="#documents">Lab Documents</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="header">
+      <div class="photo">
+        <img src="photo.jpg" alt="Xiang Yusheng">
+      </div>
+
+      <div class="profile">
+        <h1 class="name">Xiang Yusheng</h1>
+        <div class="title">Professor and PhD Supervisor</div>
+        <div class="subtitle">Intelligent Unmanned Equipment Laboratory, Nantong University</div>
+
+        <div class="contact" id="contact">
+          <p><strong>Tel:</strong> 13016008887</p>
+          <p><strong>Email:</strong> yusheng.xiang@ntu.edu.cn</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 id="biography">Biography</h2>
+
+    <p>
+      Xiang Yusheng is a Professor and PhD supervisor at Nantong University, where he leads the Intelligent Unmanned Equipment Laboratory.
+      His research focuses on artificial intelligence and autonomous systems for real-world engineering applications.
+    </p>
+
+    <p>
+      He received his PhD from the Karlsruhe Institute of Technology (KIT) in Germany and was jointly trained at the University of California, Berkeley, under the supervision of Prof. Samuel S. Mao.
+    </p>
+
+    <p>
+      His work lies at the intersection of artificial intelligence, intelligent construction machinery, and autonomous special-purpose vehicles.
+      His group studies how AI and robotic systems can be integrated into large-scale engineering systems and deployed in complex real-world environments.
+    </p>
+
+    <h2 id="research">Research Interests</h2>
+    <ul>
+      <li>Artificial Intelligence for Engineering Systems</li>
+      <li>Autonomous Vehicles and Intelligent Machinery</li>
+      <li>Robotics and Embodied AI</li>
+      <li>Multi-sensor Perception and System Integration</li>
+      <li>AI-driven Industrial and Infrastructure Systems</li>
+    </ul>
+
+    <h2 id="students">Students and Recruitment</h2>
+
+    <p>
+      The group recruits PhD students, master’s students, and undergraduate researchers every year. Students from different academic backgrounds are welcome.
+    </p>
+
+    <p>
+      We particularly welcome students who are highly motivated, strong in hands-on engineering and system development, interested in interdisciplinary research, or curious about entrepreneurship.
+    </p>
+
+    <p>
+      Applicants are encouraged to send a CV, transcripts, and a short statement of research interests and long-term goals.
+    </p>
+
+    <h2 id="documents">Lab Documents</h2>
+    <ul>
+      <li>
+        <a href="南通大学智能无人装备实验室：本科生科研训练与竞赛团队手册.pdf" target="_blank">
+          Undergraduate Research and Competition Handbook
+        </a>
+      </li>
+      <li>
+        <a href="南通大学智能无人装备实验室：研究生培养与管理手册_正式版.pdf" target="_blank">
+          Graduate Student Handbook
+        </a>
+      </li>
+    </ul>
+
+    <div class="footer">
+      © Xiang Yusheng | Nantong University
+    </div>
+  </div>
+</body>
+</html>
